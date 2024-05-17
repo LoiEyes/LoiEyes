@@ -1,0 +1,133 @@
+.swiper-slide img {
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+    
+body {
+  color: white;
+   
+    background-color: black;
+    margin: 0; /* Menghilangkan margin bawaan */
+    padding: 0; /* Menghilangkan padding bawaan */
+    overflow-x: hidden;/* Mencegah penggeseran horizontal */ /* Opsional: untuk menghilangkan scroll horizontal jika tidak diperlukan */
+}
+.content{
+    width: 100%;
+}
+.card-header{
+  margin-bottom: -125px;
+}
+.card-gif{
+    background-color: transparent;
+    width: 100%;
+    position: absolute;
+    top: 15%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    color: aliceblue;
+}
+
+.statusboard{
+  width: 100%;
+  position: absolute;
+  top: 93.5%;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  color: white;
+}
+
+.icon:active {
+    transform: scale(0.9);
+     /* Misalnya, mengurangi skala saat sedang diklik */  :;
+    -webkit-transform: scale(0.9);
+    -moz-transform: scale(0.9);
+    -ms-transform: scale(0.9);
+    -o-transform: scale(0.9);
+}
+.hidden {
+    visibility: hidden;
+    
+}
+.alert {
+    width: auto;
+    height: 30px;
+   
+    position: absolute;
+    top: 1%; /* Menempatkan elemen di bagian atas halaman */
+    left: 10%;
+    right: 10%; /* Mengisi lebar elemen */
+    display: flex;
+    justify-content: center;
+   
+
+    padding: 10px; /* Padding untuk konten dalam elemen */
+    z-index: 1000; /* Menentukan tingkat kedalaman tumpukan elemen */
+}
+
+.stacked-devices {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom:0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.swiper {
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .swiper-slide {
+    background-color: transparent;
+    width: 70%;
+    height: 70%;
+    display: flex;
+    justify-content: center;
+    max-width: 400px;
+    
+
+  }
+
+  @media screen and (max-width: 576px) {
+    .card-gif{
+      background-color: transparent;
+      width: 100%;
+      position: absolute;
+      top: 23%;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      color: white;
+  }
+  .swiper-slide {
+    padding: 100px;
+  } 
+}
+@media screen and (max-width: 375px) {
+  .card-gif{
+    background-color: transparent;
+    width: 100%;
+    position: absolute;
+    top: 23%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    color: white;
+}
+.swiper-slide {
+  padding: 80px;
+} 
+}
